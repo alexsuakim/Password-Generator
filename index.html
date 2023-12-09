@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="headingLine1">Generate a</h1>
+        <h1 id="headingLine2">random password</h1>
+        <h3 id="headingDescription">Never use an insecure password again.</h3>
+        <div class="parent">
+            <div class="button-column">
+                <button id="generate-btn" onclick="generatePasswords()">Generate passwords</button>
+            </div>
+            <div clss="toggles-column">
+                <div id="length">
+                    <input id="length-input" type="text" placeholder="password length"/>
+                    <button id="submit-btn" onclick="submitPwLength()">change</button>
+                </div>
+                <div id="numbers">
+                    <label class="switch">
+                        <input type="checkbox" id="number-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="toggle-text">include numbers</p>
+                </div>
+                <div id="symbols">
+                    <label class="switch">
+                        <input type="checkbox" id="symbol-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="toggle-text">include symbols</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="passwords">
+            <button class="pw-btn" id="pw1" onclick="copyPW(this)"></button>
+            <button class="pw-btn" id="pw2" onclick="copyPW(this)"></button>
+            <button class="pw-btn" id="pw3" onclick="copyPW(this)"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background: #1F2937;
+}
+
+h1, h3{
+    margin: 0 30px;
+}
+
+#headingLine1{
+    margin-top: 50px;
+    color: white;
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    text-align: left;
+}
+#headingLine2{
+    color: #4ADF86;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    text-align: left;
+}
+#headingDescription{
+    color: #D5D4D8;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#generate-btn{
+    background: #10B981;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 0 50px 0 30px;
+}
+
+p{
+    color:#D5D4D8;   
+}
+
+.parent{
+    display: flex;
+    align-items: center;
+}
+.button-column{
+    
+}
+.toggles-column{
+    
+}
+.toggle-text{
+    margin-left: 10px;
+}
+#length{
+    margin: 0 20px 8px 0;
+}
+#numbers{
+    display: flex;
+    align-items: center;
+}
+#submit-btn{
+    background-color: #10B981;
+    border: 0;
+    border-radius: 3px;
+    height: 24px;
+}
+#symbols{
+    display: flex;
+    align-items: center;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #10B981;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+hr{
+    margin-top: 10px;
+    border: 1px solid #2F3E53;
+    width: 90%;
+}
+.passwords{
+    display: flex;
+}
+.pw-btn{
+    height: 38px;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 30px 20px;
+    border: 0;
+    border-radius: 3px;
+    background: #273549;
+    color: #55F991;
+}
